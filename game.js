@@ -1,0 +1,65 @@
+const mockAllocations = [
+  { address: "@thedaks_png", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@spikynads", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@mondanabaddies", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@overnads", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@0xBlueLou", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@0xmazzys", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@0xRekkkt", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@Thejusjaya234", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@lazy_santo", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@MiraXMeta", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@AldenCrypto03", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@lily_lils0", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@deja_Vooooo", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@RiagoARibeiro", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@itzr0nin", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@solhitman", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@angry_olla", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@moxley_25", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@ademola_sa34941", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@NotBexel", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@noob_nad", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@RagingBull_96", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@SEBSIXCHAINS", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@Josh_kind6", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@Yusuphh01", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@OLAWALE_WEB3", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@SatishMeena90", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@uncle_imad", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@Sar746980041", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@umairullah6713", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@Tarun775288", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@moon_rider0951", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@Neerajmeena1787", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@Tapan_2014", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@durgesh609", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@abhigupta02003", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@Littleprin45060", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@ONEMANN86", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@Tapan19955", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@DuchaNguyenpham", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@dekschain", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 },
+  { address: "@dylannads", category: "Giveaway Participant", amount: Math.floor(Math.random() * (1600 - 800 + 1)) + 800 }
+];
+
+function checkAllocation() {
+  const addressInput = document.getElementById('addressInput').value.trim();
+  const resultDiv = document.getElementById('result');
+
+  if (!addressInput) {
+    resultDiv.className = 'result error';
+    resultDiv.innerText = 'Please enter a username!';
+    return;
+  }
+
+  const allocation = mockAllocations.find(alloc => alloc.address.toLowerCase() === addressInput.toLowerCase());
+  
+  if (allocation) {
+    resultDiv.className = 'result success';
+    resultDiv.innerText = `Allocation: ${allocation.amount} tokens (Category: ${allocation.category})`;
+  } else {
+    resultDiv.className = 'result error';
+    resultDiv.innerText = 'No allocation found for this username. (Not Eligible: 0 tokens)';
+  }
+}
